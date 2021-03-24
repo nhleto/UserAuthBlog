@@ -12,7 +12,6 @@ namespace UserAuthBlog.Data
         [Required]
         public string Body { get; set; }
         public ApplicationUser User { get; set; }
-        //[Required]
         public string ApplicationUserId { get; set; }
         public List<Tag> Tags { get; set; } = new List<Tag>();
         public List<Comment> Comments { get; set; } = new List<Comment>();

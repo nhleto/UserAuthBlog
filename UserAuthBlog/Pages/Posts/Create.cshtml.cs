@@ -5,26 +5,28 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.Logging;
 using UserAuthBlog.Data;
 
 namespace UserAuthBlog.Pages.Posts
 {
     public class CreateModel : PageModel
     {
-        private readonly UserAuthBlog.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
+
         [BindProperty]
         public Post Post { get; set; }
 
-        [BindProperty]
-        public ApplicationUser user { get; set; }
-        public CreateModel(UserAuthBlog.Data.ApplicationDbContext context)
+        [BindProperty(SupportsGet = true)]
+        public ApplicationUser AppUser { get; set; }
+        public CreateModel(ApplicationDbContext context)
         {
             _context = context;
         }
 
         public IActionResult OnGet()
         {
-        ViewData["ApplicationUserId"] = new SelectList(_context.Users, "Id", "Id");
+            ViewData["ApplicationUserId"] = new SelectList(_context.Users, "Id", "Id");
             return Page();
         }
 
@@ -38,8 +40,7 @@ namespace UserAuthBlog.Pages.Posts
 
             _context.Posts.Add(Post);
             await _context.SaveChangesAsync();
-
-            return RedirectToPage("./Index");
+            return RedirectToPage("./List");
         }
     }
 }

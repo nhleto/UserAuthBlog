@@ -4,6 +4,6 @@ namespace UserAuthBlog.Data
 {
     public interface IPostData
     {
-        public IEnumerable<Post> GetAllPosts();      
+        public IEnumerable<Post> GetAllPosts();
     }
 }

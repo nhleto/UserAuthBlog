@@ -10,14 +10,15 @@ namespace UserAuthBlog.Pages.Posts
 {
     public class IndexModel : PageModel
     {
-        private readonly ApplicationDbContext appDb;
+        private readonly ApplicationDbContext _context;
         private readonly IPostData postData;
 
         public IEnumerable<Post> Posts { get; set; }
+        public IEnumerable<ApplicationUser> Users { get; set; }
 
-        public IndexModel(ApplicationDbContext AppDb, IPostData postData)
+        public IndexModel(ApplicationDbContext _context, IPostData postData)
         {
-            appDb = AppDb;
+            this._context = _context;
             this.postData = postData;
         }
         public IActionResult OnGet()

@@ -164,3 +164,4 @@ C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Are
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\Index.cshtml.g.cs
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\Create.cshtml.g.cs
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\List.cshtml.g.cs
