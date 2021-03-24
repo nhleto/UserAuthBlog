@@ -6,6 +6,7 @@ namespace UserAuthBlog.Data
     public class ApplicationUser : IdentityUser
     {
         public List<Post> Posts { get; set; } = new List<Post>();
-        public List<Comment> Comments { get; set; } = new List<Comment>();
+        //comment out "Comments" model: User's dont have comments, Posts have comments
+        //public List<Comment> Comments { get; set; } = new List<Comment>();
     }
 }

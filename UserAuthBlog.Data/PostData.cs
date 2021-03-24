@@ -24,6 +24,7 @@ namespace UserAuthBlog.Data
                 .Include(p => p.Comments)
                 .Include(p => p.Tags)
                 .AsSplitQuery()
+                //I was sent to look at docs from the CLI and after "splitting" this query, error message went away
                 .ToList();
         }
     }

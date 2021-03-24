@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using UserAuthBlog.Data;
 
@@ -13,8 +14,6 @@ namespace UserAuthBlog.Pages.Posts
         [BindProperty]
         public Post Post { get; set; }
 
-        [BindProperty(SupportsGet = true)]
-        public ApplicationUser AppUser { get; set; }
         public CreateModel(ApplicationDbContext context)
         {
             _context = context;
@@ -22,7 +21,6 @@ namespace UserAuthBlog.Pages.Posts
 
         public IActionResult OnGet()
         {
-            ViewData["ApplicationUserId"] = new SelectList(_context.Users, "Id", "Id");
             return Page();
         }
 
@@ -33,7 +31,12 @@ namespace UserAuthBlog.Pages.Posts
             {
                 return Page();
             }
-
+            var Taggs = new List<Tag>();
+            var Tag = new Tag() { Name = "Seed Tag", PostId = Post.Id };
+            Taggs.Add(Tag);
+            //Tags.Add(new)
+            var post = new Post { Title = "Seed", Body = "Seed", Tags = Taggs  ,ApplicationUserId = "463a66ad-afa9-4e45-bf75-9356dda65606" };
+            _context.Add(post);
             _context.Posts.Add(Post);
             await _context.SaveChangesAsync();
             return RedirectToPage("./List");

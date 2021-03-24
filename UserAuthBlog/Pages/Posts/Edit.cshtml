@@ -1,16 +1,17 @@
-﻿@page
-@model UserAuthBlog.Pages.Posts.CreateModel
+﻿@page "{postId:int}"
+@model UserAuthBlog.Pages.Posts.EditModel
 @using Microsoft.AspNetCore.Identity
 @inject UserManager<ApplicationUser> UserManager
-
 @{
-    ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-<p>@UserManager.GetUserId(User)</p>
-<h4>Post</h4>
-<hr />
+<h2>Edit a Post</h2>
+<p>@Model.Post.Tags</p>
+@foreach (var tag in Model.Post.Tags)
+{
+    <span>The tag is: @tag </span>
+}
+
 <div class="row">
     <div class="col-md-4">
         <form method="post">
@@ -32,16 +33,8 @@
             </div>
             <input type="hidden" asp-for="Post.ApplicationUserId" value="@UserManager.GetUserId(User)" />
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
     </div>
 </div>
-
-<div>
-    <a asp-page="List">Back to List</a>
-</div>
-
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
