@@ -2143,6 +2143,36 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "UserAuthBlog.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore": "5.0.4"
+        },
+        "compile": {
+          "bin/placeholder/UserAuthBlog.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserAuthBlog.Core.dll": {}
+        }
+      },
+      "UserAuthBlog.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore": "5.0.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "5.0.4",
+          "UserAuthBlog.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/UserAuthBlog.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/UserAuthBlog.Data.dll": {}
+        }
       }
     }
   },
@@ -7480,6 +7510,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "UserAuthBlog.Core/1.0.0": {
+      "type": "project",
+      "path": "../UserAuthBlog.Core/UserAuthBlog.Core.csproj",
+      "msbuildProject": "../UserAuthBlog.Core/UserAuthBlog.Core.csproj"
+    },
+    "UserAuthBlog.Data/1.0.0": {
+      "type": "project",
+      "path": "../UserAuthBlog.Data/UserAuthBlog.Data.csproj",
+      "msbuildProject": "../UserAuthBlog.Data/UserAuthBlog.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7489,7 +7529,9 @@
       "Microsoft.AspNetCore.Identity.UI >= 5.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.4",
       "Microsoft.EntityFrameworkCore.Tools >= 5.0.4",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 5.0.2",
+      "UserAuthBlog.Core >= 1.0.0",
+      "UserAuthBlog.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7518,7 +7560,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\hnrle\\source\\repos\\UserAuthBlog\\UserAuthBlog.Core\\UserAuthBlog.Core.csproj": {
+              "projectPath": "C:\\Users\\hnrle\\source\\repos\\UserAuthBlog\\UserAuthBlog.Core\\UserAuthBlog.Core.csproj"
+            },
+            "C:\\Users\\hnrle\\source\\repos\\UserAuthBlog\\UserAuthBlog.Data\\UserAuthBlog.Data.csproj": {
+              "projectPath": "C:\\Users\\hnrle\\source\\repos\\UserAuthBlog\\UserAuthBlog.Data\\UserAuthBlog.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

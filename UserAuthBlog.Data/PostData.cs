@@ -1,24 +1,30 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UserAuthBlog.Data
 {
-    class PostData : IPostData
+    public class PostData : IPostData
     {
 
         private readonly ApplicationDbContext db;
+
+        private List<Post> Post;
 
         public PostData(ApplicationDbContext db)
         {
             this.db = db;
         }
 
-        public IEnumerable<Post> GetAllPosts(int id)
+        public IEnumerable<Post> GetAllPosts()
         {
-            return db.Posts;
+            //"Include" is part of EF Core. Just like in RoR. Use "Include" to reduce N + 1 queries
+            return Post = db.Posts
+                .Include(p => p.User)
+                .Include(p => p.Comments)
+                .Include(p => p.Tags)
+                .AsSplitQuery()
+                .ToList();
         }
     }
 }

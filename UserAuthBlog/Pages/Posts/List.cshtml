@@ -22,6 +22,12 @@
             <th>
                 @Html.DisplayNameFor(model => model.Post[0].User)
             </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Post[0].Comments)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Post[0].Tags)
+            </th>
             <th></th>
         </tr>
     </thead>
@@ -36,6 +42,12 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.User.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comments)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tags)
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |

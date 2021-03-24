@@ -1,0 +1,15 @@
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\obj\Debug\net5.0\UserAuthBlog.Core.csprojAssemblyReference.cache
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\obj\Debug\net5.0\UserAuthBlog.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\obj\Debug\net5.0\UserAuthBlog.Core.AssemblyInfoInputs.cache
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\obj\Debug\net5.0\UserAuthBlog.Core.AssemblyInfo.cs
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\obj\Debug\net5.0\UserAuthBlog.Core.csproj.CoreCompileInputs.cache
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\bin\Debug\net5.0\UserAuthBlog.Core.deps.json
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\bin\Debug\net5.0\UserAuthBlog.Core.runtimeconfig.json
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\bin\Debug\net5.0\UserAuthBlog.Core.runtimeconfig.dev.json
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\bin\Debug\net5.0\UserAuthBlog.Core.dll
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\bin\Debug\net5.0\ref\UserAuthBlog.Core.dll
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\bin\Debug\net5.0\UserAuthBlog.Core.pdb
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\obj\Debug\net5.0\UserAuthBlog.Core.dll
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\obj\Debug\net5.0\ref\UserAuthBlog.Core.dll
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\obj\Debug\net5.0\UserAuthBlog.Core.pdb
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog.Core\obj\Debug\net5.0\UserAuthBlog.Core.genruntimeconfig.cache

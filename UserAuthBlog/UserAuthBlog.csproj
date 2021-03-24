@@ -1,9 +1,40 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <UserSecretsId>aspnet-UserAuthBlog-DCF20CC5-679A-40DC-83FF-4F2E0D88565D</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\Identity\Data\**" />
+    <Compile Remove="bin\**" />
+    <Compile Remove="Data\Migrations\**" />
+    <Compile Remove="Migrations\**" />
+    <Content Remove="Areas\Identity\Data\**" />
+    <Content Remove="bin\**" />
+    <Content Remove="Data\Migrations\**" />
+    <Content Remove="Migrations\**" />
+    <EmbeddedResource Remove="Areas\Identity\Data\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="Data\Migrations\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <None Remove="Areas\Identity\Data\**" />
+    <None Remove="bin\**" />
+    <None Remove="Data\Migrations\**" />
+    <None Remove="Migrations\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Areas\Identity\IdentityHostingStartup.cs" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net5.0\staticwebassets\UserAuthBlog.StaticWebAssets.xml" />
+    <Content Include="obj\Debug\net5.0\UserAuthBlog.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\UserAuthBlog.csproj.nuget.dgspec.json" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.4" />
@@ -12,6 +43,42 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.4" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\net5.0\apphost.exe" />
+    <None Include="obj\Debug\net5.0\ref\UserAuthBlog.dll" />
+    <None Include="obj\Debug\net5.0\staticwebassets\UserAuthBlog.StaticWebAssets.Manifest.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.assets.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.csproj.CopyComplete" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.dll" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.genruntimeconfig.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.pdb" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.RazorAssemblyInfo.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.RazorCoreGenerate.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.RazorTargetAssemblyInfo.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.TagHelpers.input.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.TagHelpers.output.cache" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.Views.dll" />
+    <None Include="obj\Debug\net5.0\UserAuthBlog.Views.pdb" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\UserAuthBlog.csproj.EntityFrameworkCore.targets" />
+    <None Include="obj\UserAuthBlog.csproj.nuget.g.props" />
+    <None Include="obj\UserAuthBlog.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UserAuthBlog.Core\UserAuthBlog.Core.csproj" />
+    <ProjectReference Include="..\UserAuthBlog.Data\UserAuthBlog.Data.csproj" />
   </ItemGroup>
 
 </Project>

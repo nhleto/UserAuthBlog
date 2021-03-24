@@ -13,5 +13,6 @@
     <WebStackScaffolding_DbContextDialogWidth>650</WebStackScaffolding_DbContextDialogWidth>
     <WebStackScaffolding_IdentityDialogWidth>650</WebStackScaffolding_IdentityDialogWidth>
     <WebStackScaffolding_LayoutPageFile />
+    <ShowAllFiles>false</ShowAllFiles>
   </PropertyGroup>
 </Project>

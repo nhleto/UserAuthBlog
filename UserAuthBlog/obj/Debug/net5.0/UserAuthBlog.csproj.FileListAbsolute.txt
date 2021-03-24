@@ -165,3 +165,7 @@ C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Are
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\Index.cshtml.g.cs
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\Create.cshtml.g.cs
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\List.cshtml.g.cs
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\bin\Debug\net5.0\UserAuthBlog.Core.dll
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\bin\Debug\net5.0\UserAuthBlog.Data.dll
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\bin\Debug\net5.0\UserAuthBlog.Core.pdb
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\bin\Debug\net5.0\UserAuthBlog.Data.pdb

@@ -1,29 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using UserAuthBlog.Data;
 
 namespace UserAuthBlog.Pages.Posts
 {
     public class ListModel : PageModel
     {
-        private readonly UserAuthBlog.Data.ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
+        private readonly IPostData postData;
+
         public IList<Post> Post { get; set; }
 
-        public ListModel(UserAuthBlog.Data.ApplicationDbContext context)
+        public ListModel(ApplicationDbContext context, IPostData postData)
         {
             _context = context;
+            this.postData = postData;
         }
 
-
-        public async Task OnGetAsync()
+        public IActionResult OnGet()
         {
-            Post = await _context.Posts
-                .Include(p => p.User).ToListAsync();
+            Post = (IList<Post>)postData.GetAllPosts();
+            return Page();
         }
     }
 }
