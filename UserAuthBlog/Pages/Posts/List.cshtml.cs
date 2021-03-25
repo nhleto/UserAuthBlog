@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UserAuthBlog.Data;
 
 namespace UserAuthBlog.Pages.Posts
+
 {
     public class ListModel : PageModel
     {
@@ -25,5 +26,10 @@ namespace UserAuthBlog.Pages.Posts
             Post = (IList<Post>)postData.GetAllPosts();
             return Page();
         }
+
+        //public IActionResult OnPostDelete(int id)
+        //{
+
+        //}
     }
 }

@@ -82,9 +82,11 @@ ServiceOnlyConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.Constructo
 Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
 <Node Id = "IdentityUserRole&lt;string&gt;.RoleId" Label="RoleId" Name="RoleId" Category="Property Primary" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
 Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
-<Node Id = "PostTag" Label="PostTag" Name="PostTag" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
+<Node Id = "ApplicationUser" Label="ApplicationUser" Name="ApplicationUser" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
 Relational:DefaultMappings: System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.Internal.TableMappingBase]
+Relational:Schema:
 Relational:TableMappings: System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.Internal.TableMapping]
+Relational:TableName: AspNetUsers
 ServiceOnlyConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding" Category="EntityType" Group="Expanded" />
 <Node Id = "IdentityUserToken&lt;string&gt;.UserId" Label="UserId" Name="UserId" Category="Property Primary" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
 Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
@@ -96,16 +98,6 @@ Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microso
 Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
 <Node Id = "IdentityUserToken&lt;string&gt;.Value" Label="Value" Name="Value" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
 Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
-<Node Id = "ApplicationUser" Label="ApplicationUser" Name="ApplicationUser" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
-Relational:DefaultMappings: System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.Internal.TableMappingBase]
-Relational:Schema:
-Relational:TableMappings: System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.Internal.TableMapping]
-Relational:TableName: AspNetUsers
-ServiceOnlyConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding" Category="EntityType" Group="Expanded" />
-<Node Id = "PostTag.PostsId" Label="PostsId" Name="PostsId" Category="Property Primary" Type="int" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
-Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
-<Node Id = "PostTag.TagsId" Label="TagsId" Name="TagsId" Category="Property Primary" Type="int" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
-Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="True" IsForeignKey="True" IsRequired="True" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
 <Node Id = "Comment" Label="Comment" Name="Comment" BaseClass="" IsAbstract="False" ChangeTrackingStrategy="ChangeTrackingStrategy.Snapshot"  Annotations="ConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.ConstructorBinding
 Relational:DefaultMappings: System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.Internal.TableMappingBase]
 Relational:TableMappings: System.Collections.Generic.List`1[Microsoft.EntityFrameworkCore.Metadata.Internal.TableMapping]
@@ -171,8 +163,8 @@ ServiceOnlyConstructorBinding: Microsoft.EntityFrameworkCore.Metadata.Constructo
 Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]
 SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
 <Node Id = "Post.Comments" Label="Comments (*)" Name="Comments" Category="Navigation Collection" Type="List&lt;Comment&gt;"  Field="" Dependent="Comment" Principal="" Inverse="Post" PropertyAccessMode="PropertyAccessMode.Default" />
+<Node Id = "Post.Tags" Label="Tags (*)" Name="Tags" Category="Navigation Collection" Type="List&lt;Tag&gt;"  Field="" Dependent="Tag" Principal="" Inverse="" PropertyAccessMode="PropertyAccessMode.Default" />
 <Node Id = "Post.User" Label="User (1)" Name="User" Category="Navigation Property" Type="ApplicationUser"  Field="" Dependent="" Principal="ApplicationUser" Inverse="Posts" PropertyAccessMode="PropertyAccessMode.Default" />
-<Node Id = "Post.Tags" Label="Tags (1)" Name="Tags" Category="Navigation Property" Type="List&lt;Tag&gt;"  Field="" Dependent="" Principal="" Inverse="Posts" PropertyAccessMode="PropertyAccessMode.Default" />
 <Node Id = "Post.ApplicationUserId" Label="ApplicationUserId" Name="ApplicationUserId" Category="Property Foreign" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
 Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
 <Node Id = "Post.Body" Label="Body" Name="Body" Category="Property Required" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
@@ -185,9 +177,8 @@ Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft
 SqlServer:ValueGenerationStrategy: IdentityColumn" IsPrimaryKey="True" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="ValueGenerated.OnAdd" />
 <Node Id = "Tag.Name" Label="Name" Name="Name" Category="Property Optional" Type="string" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
 Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
-<Node Id = "Tag.PostId" Label="PostId" Name="PostId" Category="Property Required" Type="int" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
-Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="False" IsForeignKey="False" IsRequired="True" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
-<Node Id = "Tag.Posts" Label="Posts" Name="Posts" Category="Property Optional" Type="List&lt;Post&gt;" MaxLength="None" Field="" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="" IsPrimaryKey="False" IsForeignKey="False" IsRequired="False" IsIndexed="False" IsShadow="False" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
+<Node Id = "Tag.PostId" Label="PostId" Name="PostId" Category="Property Foreign" Type="Nullable&lt;int&gt;" MaxLength="None" Field="nofield" PropertyAccessMode="PropertyAccessMode.Default" BeforeSaveBehavior="PropertySaveBehavior.Save" AfterSaveBehavior="PropertySaveBehavior.Save" Annotations="Relational:DefaultColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMappingBase]
+Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ColumnMapping]" IsPrimaryKey="False" IsForeignKey="True" IsRequired="False" IsIndexed="True" IsShadow="True" IsAlternateKey="False" IsConcurrencyToken="False" IsUnicode="True" ValueGenerated="None" />
   </Nodes>
   <Links>
 <Link Source = "IModel" Target="IdentityRole" Category="Contains" />
@@ -219,17 +210,12 @@ Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft
 <Link Source="IdentityUserRole&lt;string&gt;" Target="IdentityRole" From="IdentityUserRole&lt;string&gt;.RoleId" To="IdentityRole.Id" Name="IdentityUserRole&lt;string&gt; -> IdentityRole" Annotations="Relational:ForeignKeyMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ForeignKeyConstraint]" IsUnique="False" Label="1:*" Category="Foreign Key" />
 <Link Source="IdentityUserRole&lt;string&gt;" Target="ApplicationUser" From="IdentityUserRole&lt;string&gt;.UserId" To="ApplicationUser.Id" Name="IdentityUserRole&lt;string&gt; -> ApplicationUser" Annotations="Relational:ForeignKeyMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ForeignKeyConstraint]" IsUnique="False" Label="1:*" Category="Foreign Key" />
 <Link Source = "IdentityUserRole&lt;string&gt;" Target="IdentityUserRole&lt;string&gt;.RoleId" Category="Contains" />
-<Link Source = "IModel" Target="PostTag" Category="Contains" />
+<Link Source = "IModel" Target="ApplicationUser" Category="Contains" />
 <Link Source = "IdentityUserToken&lt;string&gt;" Target="IdentityUserToken&lt;string&gt;.UserId" Category="Contains" />
 <Link Source="IdentityUserToken&lt;string&gt;" Target="ApplicationUser" From="IdentityUserToken&lt;string&gt;.UserId" To="ApplicationUser.Id" Name="IdentityUserToken&lt;string&gt; -> ApplicationUser" Annotations="Relational:ForeignKeyMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ForeignKeyConstraint]" IsUnique="False" Label="1:*" Category="Foreign Key" />
 <Link Source = "IdentityUserToken&lt;string&gt;" Target="IdentityUserToken&lt;string&gt;.LoginProvider" Category="Contains" />
 <Link Source = "IdentityUserToken&lt;string&gt;" Target="IdentityUserToken&lt;string&gt;.Name" Category="Contains" />
 <Link Source = "IdentityUserToken&lt;string&gt;" Target="IdentityUserToken&lt;string&gt;.Value" Category="Contains" />
-<Link Source = "IModel" Target="ApplicationUser" Category="Contains" />
-<Link Source = "PostTag" Target="PostTag.PostsId" Category="Contains" />
-<Link Source="PostTag" Target="Post" From="PostTag.PostsId" To="Post.Id" Name="PostTag -> Post" Annotations="Relational:ForeignKeyMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ForeignKeyConstraint]" IsUnique="False" Label="1:*" Category="Foreign Key" />
-<Link Source="PostTag" Target="Tag" From="PostTag.TagsId" To="Tag.Id" Name="PostTag -> Tag" Annotations="Relational:ForeignKeyMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ForeignKeyConstraint]" IsUnique="False" Label="1:*" Category="Foreign Key" />
-<Link Source = "PostTag" Target="PostTag.TagsId" Category="Contains" />
 <Link Source = "IModel" Target="Comment" Category="Contains" />
 <Link Source = "ApplicationUser" Target="ApplicationUser.Posts" Category="Contains" />
 <Link Source = "ApplicationUser" Target="ApplicationUser.Id" Category="Contains" />
@@ -258,8 +244,8 @@ Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft
 <Link Source = "Comment" Target="Comment.UserId" Category="Contains" />
 <Link Source = "IModel" Target="Tag" Category="Contains" />
 <Link Source = "Post" Target="Post.Comments" Category="Contains" />
-<Link Source = "Post" Target="Post.User" Category="Contains" />
 <Link Source = "Post" Target="Post.Tags" Category="Contains" />
+<Link Source = "Post" Target="Post.User" Category="Contains" />
 <Link Source = "Post" Target="Post.Id" Category="Contains" />
 <Link Source="Post" Target="ApplicationUser" From="Post.ApplicationUserId" To="ApplicationUser.Id" Name="Post -> ApplicationUser" Annotations="Relational:ForeignKeyMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ForeignKeyConstraint]" IsUnique="False" Label="1:*" Category="Foreign Key" />
 <Link Source = "Post" Target="Post.ApplicationUserId" Category="Contains" />
@@ -267,9 +253,9 @@ Relational:TableColumnMappings: System.Collections.Generic.SortedSet`1[Microsoft
 <Link Source = "Post" Target="Post.Title" Category="Contains" />
 <Link Source = "IModel" Target="Tag" Category="Contains" />
 <Link Source = "Tag" Target="Tag.Id" Category="Contains" />
+<Link Source="Tag" Target="Post" From="Tag.PostId" To="Post.Id" Name="Tag -> Post" Annotations="Relational:ForeignKeyMappings: System.Collections.Generic.SortedSet`1[Microsoft.EntityFrameworkCore.Metadata.Internal.ForeignKeyConstraint]" IsUnique="False" Label="1:*" Category="Foreign Key" />
 <Link Source = "Tag" Target="Tag.Name" Category="Contains" />
 <Link Source = "Tag" Target="Tag.PostId" Category="Contains" />
-<Link Source = "Tag" Target="Tag.Posts" Category="Contains" />
   </Links>
   <Styles>
     <Style TargetType="Node" GroupLabel="EntityType" ValueLabel="True">

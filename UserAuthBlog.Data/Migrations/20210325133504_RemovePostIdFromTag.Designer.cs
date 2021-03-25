@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UserAuthBlog.Data;
 
 namespace UserAuthBlog.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210325133504_RemovePostIdFromTag")]
+    partial class RemovePostIdFromTag
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -154,6 +156,21 @@ namespace UserAuthBlog.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("PostTag", b =>
+                {
+                    b.Property<int>("PostsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TagsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PostsId", "TagsId");
+
+                    b.HasIndex("TagsId");
+
+                    b.ToTable("PostTag");
+                });
+
             modelBuilder.Entity("UserAuthBlog.Data.ApplicationUser", b =>
                 {
                     b.Property<string>("Id")
@@ -279,12 +296,7 @@ namespace UserAuthBlog.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("PostId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("PostId");
 
                     b.ToTable("Tags");
                 });
@@ -340,6 +352,21 @@ namespace UserAuthBlog.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("PostTag", b =>
+                {
+                    b.HasOne("UserAuthBlog.Data.Post", null)
+                        .WithMany()
+                        .HasForeignKey("PostsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UserAuthBlog.Data.Tag", null)
+                        .WithMany()
+                        .HasForeignKey("TagsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("UserAuthBlog.Data.Comment", b =>
                 {
                     b.HasOne("UserAuthBlog.Data.Post", "Post")
@@ -364,13 +391,6 @@ namespace UserAuthBlog.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("UserAuthBlog.Data.Tag", b =>
-                {
-                    b.HasOne("UserAuthBlog.Data.Post", null)
-                        .WithMany("Tags")
-                        .HasForeignKey("PostId");
-                });
-
             modelBuilder.Entity("UserAuthBlog.Data.ApplicationUser", b =>
                 {
                     b.Navigation("Posts");
@@ -379,8 +399,6 @@ namespace UserAuthBlog.Migrations
             modelBuilder.Entity("UserAuthBlog.Data.Post", b =>
                 {
                     b.Navigation("Comments");
-
-                    b.Navigation("Tags");
                 });
 #pragma warning restore 612, 618
         }

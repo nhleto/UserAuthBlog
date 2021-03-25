@@ -16,6 +16,21 @@ namespace UserAuthBlog.Data
             this.db = db;
         }
 
+        public int Commit()
+        {
+            return db.SaveChanges();
+        }
+
+        public Post DeletePost(int Id)
+        {
+            var post = db.Posts.Find(Id);
+            if (post != null)
+            {
+                db.Posts.Remove(post);
+            }
+            return post;
+        }
+
         public IEnumerable<Post> GetAllPosts()
         {
             //"Include" is part of EF Core. Just like in RoR. Use "Include" to reduce N + 1 queries
@@ -26,6 +41,11 @@ namespace UserAuthBlog.Data
                 .AsSplitQuery()
                 //I was sent to look at docs from the CLI and after "splitting" this query, error message went away
                 .ToList();
+        }
+
+        public Post GetPostById(int Id)
+        {
+            return db.Posts.FirstOrDefault(p => p.Id == Id);
         }
     }
 }

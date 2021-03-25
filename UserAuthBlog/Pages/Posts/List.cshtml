@@ -53,12 +53,15 @@
                 @Html.DisplayFor(modelItem => item.Comments)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Tags)
+                @foreach (var tag in item.Tags)
+                {
+                    <span>Tag: @tag.Name</span>
+                }
             </td>
             <td>
                 <a asp-page="./Edit" asp-route-postId="@item.Id">Edit</a> |
                 <a asp-page="./Details" asp-route-postId="@item.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-postId="@item.Id">Delete</a>
+                <a asp-page="Delete" asp-route-id="@item.Id">Delete</a>
             </td>
         </tr>
 }
