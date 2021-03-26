@@ -169,5 +169,5 @@ C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\bin\Debug\net5.0\UserAuthB
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\bin\Debug\net5.0\UserAuthBlog.Data.pdb
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\Edit.cshtml.g.cs
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\Create.cshtml.g.cs
-C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\NotFound.cshtml.g.cs
 C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\Delete.cshtml.g.cs
+C:\Users\hnrle\source\repos\UserAuthBlog\UserAuthBlog\obj\Debug\net5.0\Razor\Pages\Posts\NotFound.cshtml.g.cs

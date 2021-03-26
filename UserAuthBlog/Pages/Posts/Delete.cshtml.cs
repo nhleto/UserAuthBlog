@@ -20,15 +20,21 @@ namespace UserAuthBlog.Pages.Posts
             Post = postData.GetPostById(postId);
             if (Post == null)
             {
-                return RedirectToPage("../NotFound");
+                return RedirectToPage("./NotFound");
             }
 
             return Page();
         }
 
-        public IActionResult OnPost(int posId)
+        public IActionResult OnPost(int postId)
         {
-            return Page();
+            var post = postData.DeletePost(postId);
+            postData.Commit();
+            if (post == null)
+            {
+                return RedirectToPage("./NotFound");
+            }
+            return RedirectToPage("./List");
         }
     }
 }

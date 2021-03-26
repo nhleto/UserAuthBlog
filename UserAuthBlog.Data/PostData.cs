@@ -23,9 +23,11 @@ namespace UserAuthBlog.Data
 
         public Post DeletePost(int Id)
         {
-            var post = db.Posts.Find(Id);
+            //Find post by ID
+            var post = db.Posts.FirstOrDefault(p => p.Id == Id);
             if (post != null)
             {
+                //If post exists, remove from DB
                 db.Posts.Remove(post);
             }
             return post;

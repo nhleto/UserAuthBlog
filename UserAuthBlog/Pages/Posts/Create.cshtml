@@ -30,7 +30,7 @@
                 <input asp-for="Post.Tags" class="form-control" />
                 <span asp-validation-for="Post.Tags" class="text-danger"></span>
             </div>
-            <input type="hidden" asp-for="Post.ApplicationUserId" value="@UserManager.GetUserId(User)" />
+            <input type="hidden" asp-for="Post.ApplicationUserId" value="@UserManager.GetUserId(User)" /> 
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>

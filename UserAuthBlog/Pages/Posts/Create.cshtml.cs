@@ -31,14 +31,7 @@ namespace UserAuthBlog.Pages.Posts
             {
                 return Page();
             }
-
-            //Seeded Post + Tag to make sure everything is connected properly
-            //var Taggs = new List<Tag>();
-            //var Tag = new Tag() { Name = "Seed Tag" };
-            //Taggs.Add(Tag);
-            //var post = new Post { Title = "Seed", Body = "Seed", Tags = Taggs, ApplicationUserId = "463a66ad-afa9-4e45-bf75-9356dda65606" };
-            //_context.Posts.Add(post);
-
+            
             _context.Posts.Add(Post);
             await _context.SaveChangesAsync();
             return RedirectToPage("./List");
